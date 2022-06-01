@@ -1,7 +1,8 @@
 import React from 'react';
 import {FaHome} from "react-icons/fa";
 import {FaMapMarkedAlt} from "react-icons/fa";
-import { MdHeadsetMic } from "react-icons/md";
+import {MdHeadsetMic} from "react-icons/md";
+import {Slide, Zoom} from "react-awesome-reveal";
 import classes from './index.module.scss';
 
 type Props = {}
@@ -17,39 +18,50 @@ const AboutSection: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className={classes.side_text}>
                         <h1 className={classes.main_text}>Dream Living spaces</h1>
-                        <p className={classes.sub_text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ex laudantium porro sit totam.
-                            Incidunt, laboriosam, tempora? Dicta dignissimos error et maiores non quisquam sint. Aperiam aut
+                        <p className={classes.sub_text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dolorum ex laudantium porro sit totam.
+                            Incidunt, laboriosam, tempora? Dicta dignissimos error et maiores non quisquam sint. Aperiam
+                            aut
                             commodi ea esse maiores omnis, quaerat quis saepe similique tempore totam unde voluptas.</p>
-                        <div className={classes.rect}>
-                            <div className={classes.icon}>
-                                <FaHome/>
+                        <Slide direction={"right"} triggerOnce>
+                            <div className={classes.rect}>
+                                <div className={classes.icon}>
+                                    <FaHome/>
+                                </div>
+                                <div className={classes.text}>
+                                    <h3>The Perfect Residency</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos
+                                        veniam?
+                                        Harum, id?</p>
+                                </div>
                             </div>
-                            <div className={classes.text}>
-                                <h3>The Perfect Residency</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos veniam?
-                                    Harum, id?</p>
+                        </Slide>
+                        <Slide direction={"right"} delay={200} triggerOnce>
+                            <div className={classes.rect}>
+                                <div className={classes.icon}>
+                                    <MdHeadsetMic/>
+                                </div>
+                                <div className={classes.text}>
+                                    <h3>Global Architect Experts</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos
+                                        veniam?
+                                        Harum, id?</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className={classes.rect}>
-                            <div className={classes.icon}>
-                                <MdHeadsetMic/>
+                        </Slide>
+                        <Slide direction={"right"} delay={300} triggerOnce>
+                            <div className={classes.rect}>
+                                <div className={classes.icon}>
+                                    <FaMapMarkedAlt/>
+                                </div>
+                                <div className={classes.text}>
+                                    <h3>Built-in Storage Cupboards</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos
+                                        veniam?
+                                        Harum, id?</p>
+                                </div>
                             </div>
-                            <div className={classes.text}>
-                                <h3>Global Architect Experts</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos veniam?
-                                    Harum, id?</p>
-                            </div>
-                        </div>
-                        <div className={classes.rect}>
-                            <div className={classes.icon}>
-                                <FaMapMarkedAlt />
-                            </div>
-                            <div className={classes.text}>
-                                <h3>Built-in Storage Cupboards</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore omnis quos veniam?
-                                    Harum, id?</p>
-                            </div>
-                        </div>
+                        </Slide>
                     </div>
                 </div>
             </div>

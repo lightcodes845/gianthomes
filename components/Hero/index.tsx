@@ -7,6 +7,7 @@ type Props = {}
 
 const Hero: React.FC<Props> = (props: Props) => {
 
+
     return (
         <section className={classes.Hero}>
             <div className={classes.container}>
