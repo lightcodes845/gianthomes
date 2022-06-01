@@ -63,8 +63,9 @@
 
       .name{
         font-size: 1.6rem;
+        margin-bottom: 1rem;
         @include respondMax(phone-land) {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
         font-weight: bold;
         display: flex;
@@ -76,9 +77,19 @@
 
       .main_text {
         font-size: 6rem;
+        margin-bottom: 1rem;
         @include specialMax(711px) {
           font-size: 3rem;
         }
+
+        @include respondMax(phone-land) {
+          font-size: 2rem;
+        }
+
+        @include respondMax(phone-port) {
+          font-size: 1.8rem;
+        }
+
         text-align: center;
         font-weight: bold;
         text-transform: uppercase;
@@ -90,7 +101,7 @@
         padding: 2rem 6rem;
         border-radius: 5px;
         @include respondMax(phone-land) {
-          padding: 1rem 3rem;
+          padding: 1rem 1rem;
         }
         background-color: #EC3A3B;
         border: none;

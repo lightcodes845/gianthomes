@@ -17,7 +17,7 @@ const Hero: React.FC<Props> = (props: Props) => {
                     <div className={classes.text_side}>
                         <Slide direction={"up"} triggerOnce >
                             <div className={classes.name}>
-                                <FaHome/> <span>Giant Homes Agency</span>
+                                <FaHome/> <span>Giant Homes Firm</span>
                             </div>
                         </Slide>
                         <Zoom triggerOnce delay={500}>
