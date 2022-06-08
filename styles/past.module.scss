@@ -1,0 +1,54 @@
+@import "../partials/mixins";
+
+.house_name{
+  margin-top: 11rem;
+
+  .container{
+    padding: 1rem;
+    width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    @include respondMax(tab-land) {
+      width: 100%;
+      padding: 1rem 1rem;
+    }
+
+  }
+  .image_gallery {
+    margin: 4rem 0;
+  }
+
+  .content {
+    margin: 0 0 4rem 0;
+    display: flex;
+    @include respondMax(ipad-port) {
+      display: block;
+    }
+
+    .side_one{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      @include respondMax(ipad-port) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .side_two{
+      flex: 1;
+      p{
+        font-size: 1.4rem;
+        line-height: 1.7;
+        text-align: justify;
+
+        &:nth-of-type(2){
+          margin-top: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}

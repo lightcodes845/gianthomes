@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 import Hero from "../components/Hero";
 import AboutSection from "../components/About";
 import Services from "../components/Services";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Giant Homes</title>
         <meta name="description" content="Giant Homes" />

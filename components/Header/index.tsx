@@ -31,9 +31,9 @@ const Header: NextPage<Props> = (props: Props) => {
                                 <div ><Link href={'/developments'}>Developments</Link></div>
                                 <div className={classes.dropdown_menu}>
                                     <ul>
-                                        <li><Link href={"/past"}>Past</Link></li>
-                                        <li><Link href={"/present"}>Present</Link></li>
-                                        <li><Link href={"/future"}>Future</Link></li>
+                                        <Link href={"/past"}><li>Past</li></Link>
+                                        <Link href={"/present"}><li>Present</li></Link>
+                                        <Link href={"/future"}><li>Future</li></Link>
                                     </ul>
                                 </div>
                             </li>

@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import classes from "./index.module.scss";
 import Link from "next/link";
+import {FaAngleDown} from "react-icons/fa";
+import {FaAngleUp} from "react-icons/fa";
 
 type Props = {
     mobileOpen: boolean;
@@ -36,12 +38,35 @@ const MiniNav: React.FC<Props> = ({mobileOpen, closeDrawer}: Props) => {
                     }
                 }}><Link href={'/'}>Home</Link></li>
                 <li className={classes.dropdown}>
-                    <div onClick={handleToggleShowMenu} className={classes.list_item}>Developments</div>
+                    <div onClick={handleToggleShowMenu} className={[classes.list_item, classes.icon_set].join(" ")}>
+                        <span>Developments</span>
+                        {
+                            showMenu ? <FaAngleUp/> : <FaAngleDown/>
+                        }
+                    </div>
                     <div className={menuClass.join(" ")}>
                         <ul>
-                            <li><Link href={"/past"}>Past</Link></li>
-                            <li><Link href={"/present"}>Present</Link></li>
-                            <li><Link href={"/future"}>Future</Link></li>
+                            <li
+                                onClick={() => {
+                                    if (mobileOpen) {
+                                        closeDrawer();
+                                    }
+                                }}
+                            ><Link href={"/past"}>Past</Link></li>
+                            <li
+                                onClick={() => {
+                                    if (mobileOpen) {
+                                        closeDrawer();
+                                    }
+                                }}
+                            ><Link href={"/present"}>Present</Link></li>
+                            <li
+                                onClick={() => {
+                                    if (mobileOpen) {
+                                        closeDrawer();
+                                    }
+                                }}
+                            ><Link href={"/future"}>Future</Link></li>
                         </ul>
                     </div>
                 </li>

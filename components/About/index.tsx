@@ -2,7 +2,7 @@ import React from 'react';
 import {FaHome} from "react-icons/fa";
 import {FaMapMarkedAlt} from "react-icons/fa";
 import {MdHeadsetMic} from "react-icons/md";
-import {Slide, Zoom} from "react-awesome-reveal";
+import {Slide} from "react-awesome-reveal";
 import classes from './index.module.scss';
 
 type Props = {}
