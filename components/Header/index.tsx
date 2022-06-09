@@ -32,7 +32,7 @@ const Header: NextPage<Props> = (props: Props) => {
                                 <div className={classes.dropdown_menu}>
                                     <ul>
                                         <Link href={"/past"}><li>Past</li></Link>
-                                        <Link href={"/present"}><li>Present</li></Link>
+                                        <Link href={"/current"}><li>Current</li></Link>
                                         <Link href={"/future"}><li>Future</li></Link>
                                     </ul>
                                 </div>

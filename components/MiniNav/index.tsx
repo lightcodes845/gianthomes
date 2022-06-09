@@ -59,7 +59,7 @@ const MiniNav: React.FC<Props> = ({mobileOpen, closeDrawer}: Props) => {
                                         closeDrawer();
                                     }
                                 }}
-                            ><Link href={"/present"}>Present</Link></li>
+                            ><Link href={"/current"}>Current</Link></li>
                             <li
                                 onClick={() => {
                                     if (mobileOpen) {

@@ -23,6 +23,18 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    .no_houses{
+      font-weight: bold;
+      color: #ff5a3c;
+      font-size: 2rem;
+      padding: 7rem 0;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 1rem;
+      }
+    }
+
     .box {
       width: 28rem;
       height: 35rem;

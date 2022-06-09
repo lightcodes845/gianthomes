@@ -32,7 +32,7 @@ const houses = [
         link: "/past/walnut-mews",
         image: "/assets/img/developments/past/walnut_mews/2-walnutmews-1132x627.jpg",
         address: "Walnut Mews",
-        short_text: "The Waterville, The Elton and Walnut House. A prestigious city centre development of apartments and townhouses in the...",
+        short_text: "The Waterville, The Elton and Walnut House. A prestigious city centre development of apartments...",
         date: "June 8, 2022"
     },
     {
