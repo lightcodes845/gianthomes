@@ -1,8 +1,8 @@
 import React from 'react';
 import {NextPage} from "next";
 import classes from "./index.module.scss";
-import {Zoom} from "react-awesome-reveal";
 import Banner from "../../components/Banner";
+import Services from "../../components/Services";
 
 type Props = {}
 
@@ -10,10 +10,11 @@ const AboutPage: NextPage = (props: Props) => {
     return (
         <div className={classes.about_page}>
             <Banner main_text={"About Us"} background_image={"/assets/img/about.jpeg"} />
+            <Services />
             <div className={classes.container}>
                 <div className={classes.text_content}>
                     <div className={classes.side_one}>
-                        <p>Giant Homes was established in 2011 by founders Stephen Allen and Brent Warner.
+                        <p>Giant Homes was established in 2011.
                             With a wealth of experience spanning 50 years, we are dedicated to providing beautiful
                             quality homes, built to the highest standard. We strive to exceed expectations, considering
                             our clients throughout the design process to create homes of distinction.</p>
@@ -25,7 +26,7 @@ const AboutPage: NextPage = (props: Props) => {
                     <div className={classes.side_two}>
                         <h3>Custom Build</h3>
                         <p>
-                            Here at Postland Developments we offer a unique option, perfect for our clients who want
+                            Here at Giant Homes we offer a unique option, perfect for our clients who want
                             more input into their home. On selected developments we offer the client the ability to
                             purchase their dream plot and construct their dream home. The Custom Build process is less
                             stressful than traditional self build as we take full control of all the technical decisions
@@ -34,7 +35,6 @@ const AboutPage: NextPage = (props: Props) => {
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     );

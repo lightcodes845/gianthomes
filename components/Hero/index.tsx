@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaHome} from "react-icons/fa";
+import Link from "next/link";
 import { Slide, Fade, Zoom } from "react-awesome-reveal";
 import classes from "./index.module.scss"
 
@@ -17,18 +18,18 @@ const Hero: React.FC<Props> = (props: Props) => {
                     <div className={classes.text_side}>
                         <Slide direction={"up"} triggerOnce >
                             <div className={classes.name}>
-                                <FaHome/> <span>Giant Homes Firm</span>
+                                <FaHome/> <span>Giant Homes</span>
                             </div>
                         </Slide>
                         <Zoom triggerOnce delay={500}>
-                            <h1 className={classes.main_text}>Find Your Dream House By Us</h1>
+                            <h1 className={classes.main_text}>Creating British Homes Day by Day House by Houses</h1>
                         </Zoom>
                         {/*<p className={classes.sub_text}>*/}
                         {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur fugit odit*/}
                         {/*    praesentium provident vero.*/}
                         {/*</p>*/}
                         <Fade triggerOnce delay={800}>
-                            <button className={classes.cta}>Learn More</button>
+                            <Link href={"/about"} className={classes.cta}>Learn More</Link>
                         </Fade>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zoom } from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 import classes from "./index.module.scss";
 
 type Props = {}
@@ -16,32 +16,36 @@ const Services: React.FC<Props> = (props: Props) => {
                             <div className={classes.icon_logo}><img src="/assets/img/21.png" alt="icon"/></div>
                             <h2 className={classes.sub_heading}>Buy a home</h2>
                             <p className={classes.sub_text}>
-                                Over 1million+ homes for sale available, we can match you with a house you will want to call
-                                a home. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, natus!
+                                The current housing market is flooded with lots and lots of low quality homes, the
+                                importance of quality is gradually being eroded. At Giant homes we stick to the age long
+                                British standard of quality
                             </p>
-                            <div className={classes.button}>Buy a Home &rarr;</div>
+                            {/*<div className={classes.button}>Buy a Home &rarr;</div>*/}
+                            <p className={classes.bottom_text}>Insist on a giant home today to ensure you buy
+                                quality</p>
                         </div>
                     </Zoom>
                     <Zoom triggerOnce>
                         <div className={classes.service_box}>
                             <div className={classes.icon_logo}><img src="/assets/img/22.png" alt="icon"/></div>
-                            <h2 className={classes.sub_heading}>Rent a home</h2>
+                            <h2 className={classes.sub_heading}>Build a home</h2>
                             <p className={classes.sub_text}>
-                                Over 1million+ homes for sale available, we can match you with a house you will want to call
-                                a home. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, natus!
+                                Yes, it is possible, to build your own home. At giant homes, we advise, and provide
+                                quality construction systems to help build the modern home of your dreams.
                             </p>
-                            <div className={classes.button}>Rent a Home &rarr;</div>
+                            {/*<div className={classes.button}>Rent a Home &rarr;</div>*/}
+                            <p className={classes.bottom_text}>Let’s go on a journey together, building your dream home</p>
                         </div>
                     </Zoom>
                     <Zoom triggerOnce delay={300}>
                         <div className={classes.service_box}>
                             <div className={classes.icon_logo}><img src="/assets/img/23.png" alt="icon"/></div>
-                            <h2 className={classes.sub_heading}>Sell a home</h2>
+                            <h2 className={classes.sub_heading}>Invest in Real Estate</h2>
                             <p className={classes.sub_text}>
-                                Over 1million+ homes for sale available, we can match you with a house you will want to call
-                                a home. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, natus!
+                                Grow your money with us at giant homes by investing in our safe real estate investment models.
                             </p>
-                            <div className={classes.button}>Sell a Home &rarr;</div>
+                            {/*<div className={classes.button}>Sell a Home &rarr;</div>*/}
+                            <p className={classes.bottom_text}>Earn like a developer without being a developer.</p>
                         </div>
                     </Zoom>
                 </div>

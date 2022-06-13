@@ -60,7 +60,8 @@
           position: relative;
           &:hover > .dropdown_menu{
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(-10px);
+            pointer-events: auto !important;
           }
         }
         .dropdown_menu {
@@ -74,7 +75,8 @@
           box-shadow: 0 2px 10px 0 rgba(0,0,0,0.4);
           opacity: 0;
           transition: opacity .5s ease-in-out, transform .5s ease-in-out;
-          transform: translateY(-10px);
+          //transform: translateY(-10px);
+          pointer-events: none;
           width: 20rem;
           height: 12rem;
           ul {

@@ -37,7 +37,7 @@ const Header: NextPage<Props> = (props: Props) => {
                                     </ul>
                                 </div>
                             </li>
-                            <li className={classes.list_item}><Link href={'/land'}>Land</Link></li>
+                            {/*<li className={classes.list_item}><Link href={'/land'}>Land</Link></li>*/}
                             <li className={classes.list_item}><Link href={'/about'}>About Us</Link></li>
                             <li className={classes.list_item}><Link href={'/news'}>News</Link></li>
                             <li className={classes.list_item}><Link href={'/contact'}>Contact Us</Link></li>

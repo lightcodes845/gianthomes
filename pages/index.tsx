@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import Hero from "../components/Hero";
-import AboutSection from "../components/About";
+// import AboutSection from "../components/About";
 import Services from "../components/Services";
 
 const Home: NextPage = () => {
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Hero />
-        <AboutSection />
+        {/*<AboutSection />*/}
         <Services />
     </div>
   )

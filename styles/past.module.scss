@@ -27,26 +27,33 @@
 
     .side_one{
       flex: 1;
+      padding-right: 3rem;
       display: flex;
-      align-items: center;
-      font-size: 1.8rem;
-      font-weight: bold;
+      flex-direction: column;
+      justify-content: center;
       @include respondMax(ipad-port) {
         margin-bottom: 2rem;
+      }
+      h2{
+        font-weight: bold;
+        font-size: 2.4rem;
       }
     }
 
     .side_two{
       flex: 1;
-      p{
-        font-size: 1.4rem;
-        line-height: 1.7;
-        text-align: justify;
 
-        &:nth-of-type(2){
-          margin-top: 2rem;
-          font-weight: bold;
+      ul{
+        li {
+          font-size: 1.8rem;
+          padding: 1rem 0;
         }
+      }
+
+      p{
+        margin-top: 2rem;
+        font-weight: bold;
+        font-size: 2rem;
       }
     }
   }

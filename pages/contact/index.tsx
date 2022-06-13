@@ -22,7 +22,7 @@ const ContactPage: NextPage = (props: Props) => {
                     <div className={classes.box}>
                         <FaMailBulk/>
                         <h3>Email</h3>
-                        <p>sales@gianthomes.co.uk</p>
+                        <p>info@gianthomes.co.uk</p>
                     </div>
                     <div className={classes.box}>
                         <FaMapMarked/>

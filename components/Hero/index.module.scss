@@ -52,7 +52,7 @@
     .text_side{
       z-index: 55;
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -76,32 +76,33 @@
       }
 
       .main_text {
-        font-size: 6rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        //font-weight: bold;
+        text-transform: uppercase;
         @include specialMax(711px) {
           font-size: 3rem;
         }
 
         @include respondMax(phone-land) {
-          font-size: 2rem;
-        }
-
-        @include respondMax(phone-port) {
           font-size: 1.8rem;
         }
 
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
+        @include respondMax(phone-port) {
+          font-size: 1.4rem;
+        }
         //line-height: 1;
       }
 
-      .cta{
+      a{
         margin-top: 2rem;
         padding: 2rem 6rem;
         border-radius: 5px;
+        text-decoration: none;
         @include respondMax(phone-land) {
           padding: 1rem 1rem;
+          font-size: 1.4rem;
         }
         background-color: #EC3A3B;
         border: none;
