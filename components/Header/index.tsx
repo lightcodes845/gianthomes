@@ -28,7 +28,7 @@ const Header: NextPage<Props> = (props: Props) => {
                         <ul className={classes.main_list}>
                             <li className={classes.list_item}><Link href={'/'}>Home</Link></li>
                             <li className={[classes.dropdown, classes.list_item].join(" ")}>
-                                <div ><Link href={'/developments'}>Developments</Link></div>
+                                <div ><Link href={'#'}>Developments</Link></div>
                                 <div className={classes.dropdown_menu}>
                                     <ul>
                                         <Link href={"/past"}><li>Past</li></Link>

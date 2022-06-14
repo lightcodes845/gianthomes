@@ -22,7 +22,7 @@ const Hero: React.FC<Props> = (props: Props) => {
                             </div>
                         </Slide>
                         <Zoom triggerOnce delay={500}>
-                            <h1 className={classes.main_text}>Creating British Homes Day by Day House by Houses</h1>
+                            <h1 className={classes.main_text}>Creating British Homes Day by Day House by House</h1>
                         </Zoom>
                         {/*<p className={classes.sub_text}>*/}
                         {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur fugit odit*/}
