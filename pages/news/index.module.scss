@@ -2,7 +2,8 @@
 
 .news_page {
   width: 100%;
-  margin-top: 11rem;
+  min-height: 100vh;
+  //margin-top: 11rem;
 
   .container {
     padding: 1rem;
@@ -15,10 +16,8 @@
     }
   }
 
-  .text_content{
-    padding: 5rem 0;
-    font-size: 1.8rem;
-    font-weight: bold;
+  h2{
+    font-size: 3rem;
   }
 
 }
